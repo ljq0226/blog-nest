@@ -32,11 +32,11 @@ export class Post {
   contentHtml: string;
 
   // 摘要
-  @Column({ type: 'text', default: null })
+  @Column({ type: 'text', default: '' })
   summary: string;
 
   // 封面图
-  @Column({ default: null, name: 'cover_url' })
+  @Column({ default: '', name: 'cover_url' })
   coverUrl: string;
 
   // 阅读量
